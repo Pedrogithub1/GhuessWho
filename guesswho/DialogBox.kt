@@ -25,7 +25,7 @@ class DialogBox(contexto: Context?, private val interfaz: EndDialogBox, val msg:
         val mensaje = dialogo.findViewById<View>(R.id.mensaje) as TextView
         val aceptar = dialogo.findViewById<View>(R.id.aceptar) as ImageView
         val cancelar = dialogo.findViewById<View>(R.id.cancelar) as ImageView
-        mensaje.inputType = InputType.TYPE_CLASS_TEXT
+    
         mensaje.setText(msg)
         aceptar.setOnClickListener {
             interfaz.ResultDialogBox(mensaje.text.toString())
