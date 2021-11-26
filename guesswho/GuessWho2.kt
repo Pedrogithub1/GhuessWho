@@ -1,15 +1,16 @@
 package mx.pemg.guesswho
 
 import android.content.Context
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import java.util.*
 
-class GuessWho2 : AppCompatActivity(), DialogBox.EndDialogBox {
+class GuessWho2 : AppCompatActivity(), DialogBox.EndDialogBox, DialogBoxSex.EndDialogBox, DialogBoxAccesories.EndDialogBox,
+        DialogBoxSkin.EndDialogBox, DialogBoxHair.EndDialogBox{
 
     var contexto: Context? = null
     var txtMessage: TextView? = null
@@ -19,9 +20,18 @@ class GuessWho2 : AppCompatActivity(), DialogBox.EndDialogBox {
         setContentView(R.layout.activity_guess_who2)
 
         contexto = this
-        val boton = findViewById<View>(R.id.btnMessage) as Button
+        val btnMessage = findViewById<View>(R.id.btnMessage) as Button
+        val btnSex = findViewById<View>(R.id.btnSex) as Button
+        val btnAccesories = findViewById<View>(R.id.btnAccesories) as Button
+        val btnSkinTone = findViewById<View>(R.id.btnSkinTone) as Button
+        val btnHair = findViewById<View>(R.id.btnHair) as Button
+
         txtMessage = findViewById<View>(R.id.txtMessage) as TextView
-        boton.setOnClickListener { DialogBox(contexto, this, "hola") }
+        btnMessage.setOnClickListener { DialogBox(contexto, this, "¿Tu personaje es Hombre") }
+        btnSex.setOnClickListener { DialogBoxSex(contexto, this) }
+        btnAccesories.setOnClickListener { DialogBoxAccesories(contexto, this) }
+        btnSkinTone.setOnClickListener { DialogBoxSkin(contexto, this) }
+        btnHair.setOnClickListener { DialogBoxHair(contexto, this) }
 
         val imageView1 = findViewById<View>(R.id.imageView1) as ImageView
         val imageView2 = findViewById<View>(R.id.imageView2) as ImageView
@@ -473,11 +483,11 @@ class GuessWho2 : AppCompatActivity(), DialogBox.EndDialogBox {
                 arrayFlags.set(23, 0)
             }
         }
-        
+
     }
 
     override fun ResultDialogBox(mensaje: String?) {
         txtMessage!!.text = mensaje
     }
-    
+
 }
