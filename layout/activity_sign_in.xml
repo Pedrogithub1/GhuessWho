@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".LoginConfig"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_login"
+            android:drawableTint="@color/gradient_start"
+            android:text="@string/str_login"
+            android:textAlignment="center"
+            android:textColor="@color/gradient_start"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/who_guess_title" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/gradient_start"
+            android:drawableEnd="@drawable/ic_email"
+            android:drawableTint="@color/gradient_start"
+            android:hint="@string/str_email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/gradient_start"
+            android:drawableEnd="@drawable/ic_password"
+            android:drawableTint="@color/gradient_start"
+            android:hint="@string/str_password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button_rounded"
+            android:text="@string/str_login" />
+
+        <Button
+            android:id="@+id/btnLoginToRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button_rounded"
+            android:text="@string/str_register" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button_rounded"
+            android:text="@string/str_exit" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

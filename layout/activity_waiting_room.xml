@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_waitroom"
+    tools:context=".WaitingRoom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView android:id="@+id/txtNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text=" Octopus2000"
+            android:textColor="@color/greenNN"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableTint="@color/gray"
+            android:drawableLeft="@drawable/ic_user"/>
+
+        <TextView android:id="@+id/txtWins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="8 W"
+            android:textColor="@color/yellowWin"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableTint="@color/yellowWin"
+            android:drawableLeft="@drawable/ic_wins"/>
+
+        <TextView android:id="@+id/txtLoses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="5 L"
+            android:textColor="@color/redLose"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableTint="@color/redLose"
+            android:drawableLeft="@drawable/ic_loses"/>
+
+        <TextView android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="140 Points"
+            android:textColor="@color/blueScore"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableTint="@color/blueScore"
+            android:drawableLeft="@drawable/ic_points"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/str_waitingPlayer"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/txtRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/gray" />
+
+        <ProgressBar android:id="@+id/progBar_waitRoom"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:max="100"
+            android:progress="100"
+            android:rotation="-90"
+            android:indeterminate="false"
+            android:background="@drawable/circle"/>
+
+        <TextView android:id="@+id/txt_Crono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="20dp"
+            android:textColor="@color/gradient_start"/>
+
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/str_enter"
+            android:background="@drawable/button_rounded"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/str_exit"
+            android:background="@drawable/button_rounded"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

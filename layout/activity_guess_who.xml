@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="-53dp"
+        android:columnCount="5"
+        android:rowCount="7">
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="@font/finger_paint"
+                    android:text="Guess who"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMessage"
+                    android:layout_width="316dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:fontFamily="@font/finger_paint"
+                    android:paddingTop="4dp"
+                    android:text="Mensaje"
+                    android:textAlignment="center" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="fill"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.247"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <ImageView
+                        android:id="@+id/aceptar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/next"
+                        tools:ignore="MissingConstraints" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="fill"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.247"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="1.0">
+                    <ImageView
+                        android:id="@+id/cancelar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/can" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/angela" />
+
+                    <TextView
+                        android:id="@+id/txtName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Angela"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_rounded2"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/babo" />
+
+                    <TextView
+                        android:id="@+id/txtName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Babo"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/badbunny" />
+
+                    <TextView
+                        android:id="@+id/txtName3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bad Bunny"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/beckyg" />
+
+                    <TextView
+                        android:id="@+id/txtName4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Becky G"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/beyonce" />
+
+                    <TextView
+                        android:id="@+id/txtName5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beyonce"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="76dp"
+            android:layout_height="467dp"
+            android:layout_row="2"
+            android:layout_rowSpan="5"
+            android:layout_column="0"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/btnMessage"
+                android:layout_width="67dp"
+                android:layout_height="38dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_rounded"
+                android:button="@android:drawable/stat_notify_chat"
+                android:fontFamily="@font/finger_paint"
+                android:text="Msg"
+
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:id="@+id/btnSex"
+                android:layout_width="67dp"
+                android:layout_height="38dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_rounded"
+                android:button="@android:drawable/stat_notify_chat"
+                android:fontFamily="@font/finger_paint"
+                android:text="Sex"
+                android:textAlignment="center" />
+            <RadioButton
+                android:id="@+id/btnAccesories"
+                android:layout_width="67dp"
+                android:layout_height="38dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:textSize="7sp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_rounded"
+                android:button="@android:drawable/stat_notify_chat"
+                android:fontFamily="@font/finger_paint"
+                android:text="Accesories"
+                android:textAlignment="center" />
+            <RadioButton
+                android:id="@+id/btnSkinTone"
+                android:layout_width="67dp"
+                android:layout_height="38dp"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_rounded"
+                android:button="@android:drawable/stat_notify_chat"
+                android:fontFamily="@font/finger_paint"
+                android:text="Skin"
+                android:textAlignment="center" />
+            <RadioButton
+                android:id="@+id/btnHair"
+                android:layout_width="67dp"
+                android:layout_height="38dp"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_rounded"
+                android:button="@android:drawable/stat_notify_chat"
+                android:fontFamily="@font/finger_paint"
+                android:text="Hair"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginTop="5dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/chayanne" />
+
+                    <TextView
+                        android:id="@+id/txtName6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chayanne"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/dualipa" />
+
+                    <TextView
+                        android:id="@+id/txtName7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dualipa"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/hannamontana" />
+
+                    <TextView
+                        android:id="@+id/txtName8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hannah Montana"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/karolg" />
+
+                    <TextView
+                        android:id="@+id/txtName9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Karol G"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginTop="5dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/katyperry" />
+
+                    <TextView
+                        android:id="@+id/txtName10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Katy Perry"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/maluma" />
+
+                    <TextView
+                        android:id="@+id/txtName11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maluma"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/manuelturizo" />
+
+                    <TextView
+                        android:id="@+id/txtName12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manuel Turizo"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/paquita" />
+
+                    <TextView
+                        android:id="@+id/txtName13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paquita"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginTop="5dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/pepeaguilar" />
+
+                    <TextView
+                        android:id="@+id/txtName14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pepe Aguilar"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/rihanna" />
+
+                    <TextView
+                        android:id="@+id/txtName15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rihanna"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/romeosantos" />
+
+                    <TextView
+                        android:id="@+id/txtName16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Romeo Santos"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/rosalia" />
+
+                    <TextView
+                        android:id="@+id/txtName17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rosalia"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_marginTop="5dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/selenagomez" />
+
+                    <TextView
+                        android:id="@+id/txtName18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selena Gomez"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/theweeknd" />
+
+                    <TextView
+                        android:id="@+id/txtName19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Weeknd"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/tupac" />
+
+                    <TextView
+                        android:id="@+id/txtName20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tupac"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/valentinelizalde" />
+
+                    <TextView
+                        android:id="@+id/txtName21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Valentin Elizalde"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_marginTop="5dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/vicentefernandez" />
+
+                    <TextView
+                        android:id="@+id/txtName22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vicente F."
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/wizkhalifa" />
+
+                    <TextView
+                        android:id="@+id/txtName23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wiz Khalifa"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/angela" />
+
+                    <TextView
+                        android:id="@+id/txtName24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Angela Aguilar"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="1dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:src="@drawable/shakira" />
+
+                    <TextView
+                        android:id="@+id/txtName25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shakira"
+                        android:textAlignment="center"
+                        android:textColor="#232222"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/finger_paint"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="97dp"
+                    android:layout_height="60dp"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="@font/finger_paint"
+                    android:text="Pasar"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="91dp"
+                    android:layout_height="60dp"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="@font/finger_paint"
+                    android:text="Adivina"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="@font/finger_paint"
+                    android:text="Salir"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </GridLayout>
+
+</GridLayout>
