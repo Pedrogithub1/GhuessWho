@@ -255,6 +255,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -285,6 +286,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                 imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                 txtName1.text = arrayNames[arrayRnd[random]]
                 txtName1.visibility=View.VISIBLE
+                DialogBoxVictory(this)
             }
             else{
                 txtMessage!!.text = "Intenta de Nuevo"
@@ -315,6 +317,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -345,6 +348,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -375,6 +379,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -405,6 +410,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -435,6 +441,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -465,6 +472,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -495,6 +503,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -525,6 +534,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -555,6 +565,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -585,6 +596,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -615,6 +627,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -645,6 +658,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -675,6 +689,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -705,6 +720,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -735,6 +751,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -765,6 +782,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -795,6 +813,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -825,6 +844,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -855,6 +875,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -885,6 +906,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -915,6 +937,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
@@ -945,6 +968,7 @@ class GuessWho2 : AppCompatActivity(), DialogBoxSex.EndDialogBox, DialogBoxAcces
                     imageView1.setImageResource(arrayImg.get(arrayRnd[random]))
                     txtName1.text = arrayNames[arrayRnd[random]]
                     txtName1.visibility=View.VISIBLE
+                    DialogBoxVictory(this)
                 }
                 else{
                     txtMessage!!.text = "Intenta de Nuevo"
